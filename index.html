@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplePaste - Text Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SimplePaste</h1>
+            <p class="subtitle">Share text snippets easily</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Paste Code Input -->
+            <div class="paste-code-section">
+                <input type="text" id="pasteCodeInput" placeholder="Enter paste code to view">
+                <button id="loadButton" class="primary-button">Load Paste</button>
+            </div>
+
+            <!-- New Paste Section -->
+            <div id="newPasteSection">
+                <textarea id="pasteContent" placeholder="Paste your content here..."></textarea>
+                <div class="button-container">
+                    <button id="saveButton" class="primary-button">Save Paste</button>
+                </div>
+            </div>
+
+            <!-- View Paste Section -->
+            <div id="viewPasteSection" class="hidden">
+                <div class="paste-header">
+                    <h2>Saved Paste</h2>
+                    <div class="paste-actions">
+                        <button id="copyButton" class="secondary-button">Copy Content</button>
+                        <button id="newPasteButton" class="secondary-button">Create New Paste</button>
+                    </div>
+                </div>
+                <pre id="pasteDisplay"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
